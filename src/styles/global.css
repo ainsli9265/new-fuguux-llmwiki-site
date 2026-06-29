@@ -59,6 +59,21 @@ body {
 
 .header-search { flex: 1; max-width: 340px; }
 
+.header-search input {
+  width: 100%;
+  background: var(--bg-hover);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: var(--text);
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.header-search input:focus { border-color: var(--accent); }
+.header-search input::placeholder { color: var(--text-muted); }
+
 .header-nav { margin-left: auto; display: flex; gap: 8px; flex-shrink: 0; }
 
 .header-nav a {
@@ -339,20 +354,25 @@ body {
 .entry-link .entry-title { color: var(--link); font-size: 14px; }
 .entry-link .entry-tags { color: var(--text-muted); font-size: 12px; }
 
-/* ── Pagefind search widget overrides ────────────────── */
-.pagefind-ui {
-  --pagefind-ui-scale: 0.85;
-  --pagefind-ui-primary: var(--accent);
-  --pagefind-ui-text: var(--text);
-  --pagefind-ui-background: var(--bg-hover);
-  --pagefind-ui-border: var(--border);
-  --pagefind-ui-tag: var(--bg-card);
-  --pagefind-ui-border-width: 1px;
-  --pagefind-ui-border-radius: 6px;
-  --pagefind-ui-image-border-radius: 4px;
-  --pagefind-ui-image-box-ratio: 3/2;
-  --pagefind-ui-font: inherit;
+/* ── Search results page ─────────────────────────────── */
+.text-muted { color: var(--text-muted); font-size: 14px; }
+
+.search-result {
+  display: block;
+  padding: 14px 18px;
+  margin-bottom: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: border-color 0.15s;
 }
+.search-result:hover { border-color: var(--accent); }
+
+.result-title { color: var(--link); font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+.result-excerpt { color: var(--text-muted); font-size: 13px; line-height: 1.5; margin-bottom: 8px; }
+.result-excerpt mark { background: rgba(124,106,247,0.25); color: var(--text); border-radius: 2px; padding: 0 2px; }
+.result-tags { display: flex; flex-wrap: wrap; gap: 4px; }
 
 /* ── Graph page ──────────────────────────────────────── */
 .graph-page {

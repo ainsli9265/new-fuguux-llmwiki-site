@@ -41,14 +41,13 @@ const byType = typeOrder.reduce(
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title ? `${title} — UX Wiki` : 'UX Wiki'}</title>
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
-    <link rel="stylesheet" href={`${base}/pagefind/pagefind-ui.css`} />
   </head>
   <body>
     <header class="site-header">
       <a href={`${base}/`} class="site-title">UX Wiki</a>
-      <div class="header-search">
-        <div id="search"></div>
-      </div>
+      <form class="header-search" action={`${base}/search/`} method="get">
+        <input type="text" name="q" placeholder="Search…" autocomplete="off" />
+      </form>
       <nav class="header-nav">
         <a href={`${base}/graph/`}>⊙ Graph</a>
       </nav>
@@ -83,21 +82,5 @@ const byType = typeOrder.reduce(
       </main>
     </div>
 
-    <script is:inline define:vars={{ base }}>
-      window.addEventListener('DOMContentLoaded', () => {
-        const script = document.createElement('script')
-        script.src = base + '/pagefind/pagefind-ui.js'
-        script.onload = () => {
-          new PagefindUI({
-            element: '#search',
-            baseUrl: base + '/',
-            showImages: false,
-            resetStyles: false,
-            excerptLength: 10,
-          })
-        }
-        document.head.appendChild(script)
-      })
-    </script>
   </body>
 </html>
