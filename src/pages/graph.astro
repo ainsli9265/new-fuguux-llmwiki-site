@@ -1,0 +1,167 @@
+---
+import '../styles/global.css'
+import { getCollection } from 'astro:content'
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+
+const allEntries = await getCollection('wiki')
+const typeOrder = ['concept', 'entity', 'source', 'query', 'comparison', 'synthesis']
+const typeLabels: Record<string, string> = {
+  concept: 'Concepts',
+  entity: 'Entities',
+  source: 'Sources',
+  query: 'Queries',
+  comparison: 'Comparisons',
+  synthesis: 'Synthesis',
+}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Graph — UX Wiki</title>
+    <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href={`${base}/`} class="site-title">UX Wiki</a>
+      <nav class="header-nav" style="margin-left:auto">
+        <a href={`${base}/`}>← Browse</a>
+      </nav>
+    </header>
+
+    <div class="graph-page">
+      <svg id="graph-svg"></svg>
+
+      <div class="graph-legend">
+        {typeOrder.map(type => (
+          <div class="legend-item">
+            <div class="legend-dot" data-type={type}></div>
+            <span>{typeLabels[type]}</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="graph-tooltip" id="tooltip"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script is:inline define:vars={{ base }}>
+      const TYPE_COLORS = {
+        concept:    '#7c6af7',
+        entity:     '#3b82f6',
+        source:     '#10b981',
+        query:      '#f59e0b',
+        comparison: '#ef4444',
+        synthesis:  '#ec4899',
+        overview:   '#64748b',
+        other:      '#6b7280',
+      }
+
+      // Paint legend dots
+      document.querySelectorAll('.legend-dot[data-type]').forEach(el => {
+        el.style.background = TYPE_COLORS[el.dataset.type] || TYPE_COLORS.other
+      })
+
+      const tooltip = document.getElementById('tooltip')
+
+      async function init() {
+        const resp = await fetch(base + '/graph-data.json')
+        const { nodes, edges } = await resp.json()
+
+        const svg = d3.select('#graph-svg')
+        const w = svg.node().clientWidth
+        const h = svg.node().clientHeight
+
+        const g = svg.append('g')
+
+        // Zoom
+        svg.call(
+          d3.zoom()
+            .scaleExtent([0.15, 4])
+            .on('zoom', e => g.attr('transform', e.transform))
+        )
+
+        const nodeById = new Map(nodes.map(n => [n.id, n]))
+
+        const maxLinks = Math.max(...nodes.map(n => n.linkCount), 1)
+        const r = d => 4 + (n => n.linkCount / maxLinks)(nodeById.get(d.id) || {linkCount:0}) * 10
+
+        // Links
+        const link = g.append('g')
+          .attr('stroke', '#333')
+          .attr('stroke-opacity', 0.5)
+          .selectAll('line')
+          .data(edges)
+          .join('line')
+          .attr('stroke-width', 1)
+
+        // Nodes
+        const node = g.append('g')
+          .selectAll('g')
+          .data(nodes)
+          .join('g')
+          .style('cursor', 'pointer')
+          .on('click', (event, d) => {
+            window.location.href = base + '/wiki/' + d.id + '/'
+          })
+          .on('mouseover', (event, d) => {
+            tooltip.style.display = 'block'
+            tooltip.textContent = d.title
+          })
+          .on('mousemove', event => {
+            tooltip.style.left = (event.clientX + 12) + 'px'
+            tooltip.style.top  = (event.clientY - 28) + 'px'
+          })
+          .on('mouseout', () => {
+            tooltip.style.display = 'none'
+          })
+          .call(
+            d3.drag()
+              .on('start', (event, d) => {
+                if (!event.active) sim.alphaTarget(0.3).restart()
+                d.fx = d.x; d.fy = d.y
+              })
+              .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y })
+              .on('end', (event, d) => {
+                if (!event.active) sim.alphaTarget(0)
+                d.fx = null; d.fy = null
+              })
+          )
+
+        node.append('circle')
+          .attr('r', d => 4 + (d.linkCount / maxLinks) * 10)
+          .attr('fill', d => TYPE_COLORS[d.type] || TYPE_COLORS.other)
+          .attr('fill-opacity', 0.85)
+          .attr('stroke', '#111')
+          .attr('stroke-width', 1)
+
+        node.append('text')
+          .attr('dy', d => 4 + (d.linkCount / maxLinks) * 10 + 10)
+          .attr('text-anchor', 'middle')
+          .attr('fill', '#aaa')
+          .attr('font-size', '10px')
+          .attr('pointer-events', 'none')
+          .text(d => d.title.length > 22 ? d.title.slice(0, 20) + '…' : d.title)
+
+        const sim = d3.forceSimulation(nodes)
+          .force('link', d3.forceLink(edges).id(d => d.id).distance(80).strength(0.4))
+          .force('charge', d3.forceManyBody().strength(-180))
+          .force('center', d3.forceCenter(w / 2, h / 2))
+          .force('collision', d3.forceCollide().radius(d => 4 + (d.linkCount / maxLinks) * 10 + 6))
+          .on('tick', () => {
+            link
+              .attr('x1', d => d.source.x)
+              .attr('y1', d => d.source.y)
+              .attr('x2', d => d.target.x)
+              .attr('y2', d => d.target.y)
+            node.attr('transform', d => `translate(${d.x},${d.y})`)
+          })
+      }
+
+      init()
+    </script>
+  </body>
+</html>

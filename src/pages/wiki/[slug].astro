@@ -1,0 +1,97 @@
+---
+import { getCollection, render } from 'astro:content'
+import Base from '../../layouts/Base.astro'
+
+export async function getStaticPaths() {
+  const entries = await getCollection('wiki')
+  return entries.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+
+const allEntries = await getCollection('wiki')
+const slugSet = new Set(allEntries.map(e => e.id))
+
+const backlinks = allEntries.filter(
+  e => e.id !== entry.id && e.data.related.includes(entry.id)
+)
+
+const { type, title, tags, related, created, updated, authors, year, url, venue, sources } = entry.data
+
+function isUrl(s: string) {
+  return s.startsWith('http://') || s.startsWith('https://')
+}
+---
+
+<Base title={title ?? entry.id} activeSlug={entry.id}>
+  <article data-pagefind-body>
+    <div class="meta-bar">
+      {type && <span class={`type-badge type-${type}`}>{type}</span>}
+      {tags.map(tag => (
+        <span class="tag" data-pagefind-filter={`tag:${tag}`}>#{tag}</span>
+      ))}
+    </div>
+
+    <h1 data-pagefind-meta="title">{title ?? entry.id}</h1>
+
+    {(authors?.length || year || venue || url) && (
+      <div class="source-meta">
+        {authors?.length && <span>{authors.join(', ')}</span>}
+        {year && <span>{year}</span>}
+        {venue && <span>{venue}</span>}
+        {url && <a href={url} target="_blank" rel="noopener noreferrer">↗ View source</a>}
+      </div>
+    )}
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    {related.length > 0 && (
+      <section class="related-section">
+        <h2>Related</h2>
+        <div class="pill-list">
+          {related.map(slug => (
+            slugSet.has(slug)
+              ? <a href={`${base}/wiki/${slug}/`} class="pill">{slug}</a>
+              : <span class="pill" style="opacity:0.4">{slug}</span>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {backlinks.length > 0 && (
+      <section class="backlinks-section">
+        <h2>Backlinks</h2>
+        <div class="pill-list">
+          {backlinks.map(e => (
+            <a href={`${base}/wiki/${e.id}/`} class="pill">{e.data.title ?? e.id}</a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {sources?.length && (
+      <section class="related-section">
+        <h2>Source files</h2>
+        <div class="pill-list">
+          {sources.map(s => (
+            isUrl(s)
+              ? <a href={s} target="_blank" rel="noopener noreferrer" class="pill">↗ {new URL(s).hostname}</a>
+              : <span class="pill" style="color:var(--text-muted)">{s}</span>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <div class="timestamps">
+      {created && <span>Created {created}</span>}
+      {updated && <span>Updated {updated}</span>}
+    </div>
+  </article>
+</Base>

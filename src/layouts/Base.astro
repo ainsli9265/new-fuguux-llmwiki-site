@@ -1,0 +1,101 @@
+---
+import { getCollection } from 'astro:content'
+import '../styles/global.css'
+
+interface Props {
+  title?: string
+  activeSlug?: string
+}
+
+const { title, activeSlug } = Astro.props
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+
+const allEntries = await getCollection('wiki')
+
+const typeOrder = ['concept', 'entity', 'source', 'query', 'comparison', 'synthesis', 'overview']
+const typeLabels: Record<string, string> = {
+  concept: 'Concepts',
+  entity: 'Entities',
+  source: 'Sources',
+  query: 'Queries',
+  comparison: 'Comparisons',
+  synthesis: 'Synthesis',
+  overview: 'Overview',
+}
+
+const byType = typeOrder.reduce(
+  (acc, t) => {
+    acc[t] = allEntries
+      .filter(e => (e.data.type ?? 'other') === t)
+      .sort((a, b) => (a.data.title ?? a.id).localeCompare(b.data.title ?? b.id))
+    return acc
+  },
+  {} as Record<string, typeof allEntries>
+)
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title ? `${title} — UX Wiki` : 'UX Wiki'}</title>
+    <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+    <link rel="stylesheet" href={`${base}/pagefind/pagefind-ui.css`} />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href={`${base}/`} class="site-title">UX Wiki</a>
+      <div class="header-search">
+        <div id="search"></div>
+      </div>
+      <nav class="header-nav">
+        <a href={`${base}/graph/`}>⊙ Graph</a>
+      </nav>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        {typeOrder.map(type => byType[type]?.length > 0 && (
+          <details open={type === 'concept'}>
+            <summary>
+              {typeLabels[type]}
+              <span class="sidebar-count">{byType[type].length}</span>
+            </summary>
+            <ul>
+              {byType[type].map(entry => (
+                <li>
+                  <a
+                    href={`${base}/wiki/${entry.id}/`}
+                    class={activeSlug === entry.id ? 'active' : ''}
+                  >
+                    {entry.data.title ?? entry.id}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        ))}
+      </aside>
+
+      <main class="main-content">
+        <slot />
+      </main>
+    </div>
+
+    <script is:inline define:vars={{ base }}>
+      document.addEventListener('DOMContentLoaded', async () => {
+        try {
+          await import(base + '/pagefind/pagefind-ui.js')
+          new PagefindUI({
+            element: '#search',
+            baseUrl: base + '/',
+            showImages: false,
+            resetStyles: false,
+            excerptLength: 10,
+          })
+        } catch (_) {}
+      })
+    </script>
+  </body>
+</html>

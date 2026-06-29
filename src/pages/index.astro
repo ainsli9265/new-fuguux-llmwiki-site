@@ -1,0 +1,59 @@
+---
+import { getCollection } from 'astro:content'
+import Base from '../layouts/Base.astro'
+
+const allEntries = await getCollection('wiki')
+const base = import.meta.env.BASE_URL.replace(/\/$/, '')
+
+const typeOrder = ['concept', 'entity', 'source', 'query', 'comparison', 'synthesis']
+const typeLabels: Record<string, string> = {
+  concept: 'Concepts',
+  entity: 'Entities',
+  source: 'Sources',
+  query: 'Queries',
+  comparison: 'Comparisons',
+  synthesis: 'Synthesis',
+}
+
+const byType = typeOrder.reduce(
+  (acc, t) => {
+    acc[t] = allEntries
+      .filter(e => (e.data.type ?? 'other') === t)
+      .sort((a, b) => (a.data.title ?? a.id).localeCompare(b.data.title ?? b.id))
+    return acc
+  },
+  {} as Record<string, typeof allEntries>
+)
+---
+
+<Base title="UX Wiki">
+  <div class="home-header">
+    <h1>UX Wiki</h1>
+    <p>A knowledge base of user experience design concepts, patterns, and principles.</p>
+  </div>
+
+  <div class="stats-row">
+    {typeOrder.map(type => byType[type]?.length > 0 && (
+      <div class="stat-card">
+        <div class="stat-num">{byType[type].length}</div>
+        <div class="stat-label">{typeLabels[type]}</div>
+      </div>
+    ))}
+  </div>
+
+  {typeOrder.map(type => byType[type]?.length > 0 && (
+    <section class="type-section">
+      <h2>{typeLabels[type]}</h2>
+      <div class="entry-grid">
+        {byType[type].map(entry => (
+          <a href={`${base}/wiki/${entry.id}/`} class="entry-link">
+            <span class="entry-title">{entry.data.title ?? entry.id}</span>
+            {entry.data.tags.length > 0 && (
+              <span class="entry-tags">{entry.data.tags.slice(0, 4).join(' · ')}</span>
+            )}
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>
