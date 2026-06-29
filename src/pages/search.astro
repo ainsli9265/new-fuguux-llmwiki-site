@@ -48,17 +48,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '')
 
       const countLine = `<p class="text-muted" style="margin-bottom:20px">${results.length} result${results.length !== 1 ? 's' : ''}</p>`
 
-      const cards = data.map(d => {
-        const tags = (d.filters?.tag ?? [])
-          .map(t => `<a href="${base}/tags/${t}/" class="tag">#${t}</a>`)
-          .join('')
-        return `
+      const cards = data.map(d => `
           <a href="${d.url}" class="search-result">
             <div class="result-title">${d.meta?.title || d.url}</div>
             ${d.excerpt ? `<div class="result-excerpt">${d.excerpt}</div>` : ''}
-            ${tags ? `<div class="result-tags">${tags}</div>` : ''}
           </a>`
-      }).join('')
+      ).join('')
 
       resultsEl.innerHTML = countLine + cards
     } catch (err) {
