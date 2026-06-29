@@ -33,11 +33,9 @@ function isUrl(s: string) {
     <div class="meta-bar">
       {type && <span class={`type-badge type-${type}`}>{type}</span>}
       {tags.map(tag => (
-        <span class="tag" data-pagefind-filter={`tag:${tag}`}>#{tag}</span>
+        <a href={`${base}/tags/${tag}/`} class="tag" data-pagefind-filter={`tag:${tag}`}>#{tag}</a>
       ))}
     </div>
-
-    <h1 data-pagefind-meta="title">{title ?? entry.id}</h1>
 
     {(authors?.length || year || venue || url) && (
       <div class="source-meta">
