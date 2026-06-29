@@ -84,9 +84,10 @@ const byType = typeOrder.reduce(
     </div>
 
     <script is:inline define:vars={{ base }}>
-      document.addEventListener('DOMContentLoaded', async () => {
-        try {
-          await import(base + '/pagefind/pagefind-ui.js')
+      window.addEventListener('DOMContentLoaded', () => {
+        const script = document.createElement('script')
+        script.src = base + '/pagefind/pagefind-ui.js'
+        script.onload = () => {
           new PagefindUI({
             element: '#search',
             baseUrl: base + '/',
@@ -94,7 +95,8 @@ const byType = typeOrder.reduce(
             resetStyles: false,
             excerptLength: 10,
           })
-        } catch (_) {}
+        }
+        document.head.appendChild(script)
       })
     </script>
   </body>
