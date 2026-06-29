@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "7c84864493d8aacf",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf9245f426a8589a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "59c83ed08635f7ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/sources/vanduyne-2006-customer-centered-web-design.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "vanduyne-2006-customer-centered-web-design"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "776235cea2d28a44",
+    "type": "split",
+    "children": [
+      {
+        "id": "61872417c1c57acc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1711851e254bc2ae",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "c6670555bdd17a05",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:accessibility",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "9553e2e0e5061103",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4283bf0b68594d81",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec37176efbdd7653",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb3d0786e16a3e1b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "1c2cb1485d709011",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "35a44e5070a5a58d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8b969c8c8224bfd7",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "0ee8d9c09877818f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "59c83ed08635f7ed",
+  "lastOpenFiles": [
+    "wiki/sources/wikipedia-2026-design-of-everyday-things.md",
+    "wiki/sources/vanduyne-2006-making-site-search-fast-and-relevant.md",
+    "wiki/sources/vanduyne-2006-speeding-up-your-site.md",
+    "wiki/sources/vanduyne-2006-web-design-patterns.md",
+    "wiki/sources/wikipedia-2026-affordance.md",
+    "wiki/sources/wikipedia-2026-color-theory.md",
+    "wiki/sources/wikipedia-2026-fittss-law.md",
+    "wiki/sources/wikipedia-2026-gestalt-psychology.md",
+    "wiki/sources/wikipedia-2026-hicks-law.md",
+    "wiki/sources/wikipedia-2026-progressive-disclosure.md",
+    "wiki/sources/wikipedia-2026-responsive-web-design.md",
+    "wiki/sources/wikipedia-2026-stroop-effect.md",
+    "wiki/sources/wikipedia-2026-typography.md",
+    "wiki/sources/wikipedia-2026-usability-engineering.md",
+    "wiki/sources/wikipedia-2026-usability-testing.md",
+    "wiki/sources/wikipedia-2026-visual-hierarchy.md",
+    "wiki/sources/wikipedia-2026-wai-aria.md",
+    "wiki/sources/wikipedia-2026-web-accessibility.md",
+    "wiki/sources/wikipedia-2026-web-accessibility-initiative.md",
+    "wiki/sources/wikipedia-2026-web-colors.md",
+    "wiki/sources/wikipedia-2026-web-content-accessibility-guidelines.md",
+    "wiki/sources/wikipedia-2026-web-typography.md",
+    "wiki/sources/digitalgov-2026-content-introduction.md",
+    "wiki/concepts/affordance.md",
+    "wiki/sources/vanduyne-2006-designing-effective-page-layouts.md.tmp.7136.76a359f4ddb4",
+    "wiki/sources/vanduyne-2006-knowing-your-customers.md.tmp.7136.35c2be25fa65",
+    "wiki/sources/vanduyne-2006-web-design-patterns.md.tmp.7136.d37d7e6df5db",
+    "wiki/sources/vanduyne-2006-glossary.md.tmp.7136.939a21beda8f",
+    "wiki/sources/vanduyne-2006-speeding-up-your-site.md.tmp.7136.34b44e0f1abd",
+    "wiki/sources/digitalgov-2026-usability-testing.md.tmp.7136.97bb1b4d9f76",
+    "wiki/sources/digitalgov-2026-content-introduction.md.tmp.7136.f69a96802dcf",
+    "wiki/sources/vanduyne-2006-customer-centered-web-design.md.tmp.7136.a0dd8b44b359",
+    "wiki/sources/wikipedia-2026-web-accessibility.md.tmp.7136.7c635852c8f7",
+    "wiki/sources/wikipedia-2026-web-accessibility-initiative.md.tmp.7136.390e4409d81e",
+    "wiki/concepts/typography.md",
+    "wiki/concepts/form-design.md",
+    "raw/media/vanduyne-2006-advanced-e-commerce/G4.4.png",
+    "raw/media/vanduyne-2006-advanced-e-commerce/G4.2b.png",
+    "raw/media/vanduyne-2006-advanced-e-commerce/G3.4d.png",
+    "raw/media/vanduyne-2006-advanced-e-commerce/G3.4c.png",
+    "raw/media/vanduyne-2006-advanced-e-commerce/G6.2c.png",
+    "raw/media/vanduyne-2006-advanced-e-commerce/G7.3b.png",
+    "raw/media/vanduyne-2006-advanced-e-commerce/G7.3a.png",
+    "raw/media/vanduyne-2006-advanced-e-commerce/G7.2a.png",
+    "raw/media/vanduyne-2006-advanced-e-commerce/G7.2b.png",
+    "raw/media/vanduyne-2006-advanced-e-commerce/G7.1.png"
+  ]
+}
