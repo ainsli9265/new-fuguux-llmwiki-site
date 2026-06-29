@@ -14,8 +14,6 @@ updated: 2026-06-25
 
 **Solution:** extend the standard checkout's [[process-funnel|process funnel]] with gift-specific steps rather than treating gifting as a separate flow:
 
-![Walmart.com's gift-options step lets customers add gift wrap, a gift message, and a gift receipt](../../raw/media/vanduyne-2006-advanced-e-commerce/G6.2a.png)
-
 - **Never show prices to the recipient.** The packing slip that ships with a gift order should omit prices and item names where the customer requests it, while still including enough information (sender, recipient, order number, return instructions) for the recipient to make an exchange.
 - **Let customers attach a note per item, not just per order** — different gifts in the same order may go to different people even at the same address, so notes need to be assignable per item, with a [[action-buttons|Save Gift Options action button]] returning to the order summary.
 - **Disclose gift-wrap pricing up front**, next to the option itself, rather than surprising customers with it later — larger items typically cost more to wrap, so per-item pricing has to reflect that rather than charging a flat rate.

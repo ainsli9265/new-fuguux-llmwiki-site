@@ -14,8 +14,6 @@ updated: 2026-06-25
 
 **Solution:**
 
-![Shutterfly's order-history page lists past orders with status and lets a customer drill into any one of them](../../raw/media/vanduyne-2006-advanced-e-commerce/G7.2a.png)
-
 - **Require sign-in, then show order history grouped by status** (pending, shipped, completed) rather than one undifferentiated list, listed in chronological order with item contents shown when the list is short enough to scan.
 - **Set expectations proactively on pending orders.** If a product is delayed, out of stock, or discontinued, notify the customer rather than letting them discover it only when the order doesn't arrive — customers tolerate bad news delivered early far better than a broken promise discovered late.
 - **Allow self-service order modification** wherever the back-end fulfillment system supports it — shipping address, shipping method, billing, items, and quantities can each be routed to the page that already handles that data (address selection, [[multiple-destinations]], payment method, product detail, the cart), with an [[action-buttons|action button]] on the order-history entry to jump straight to the relevant edit. Some changes stop being possible once fulfillment begins; tell the customer this rather than letting a failed edit be their first sign of it.

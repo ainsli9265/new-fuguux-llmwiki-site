@@ -16,8 +16,6 @@ updated: 2026-06-25
 
 - **Scaffold the writing process as a two-step [[process-funnel|process funnel]]**: first, a title, free-text body, and numerical rating, with concrete writing guidelines (what to cover, what to avoid — e.g. don't spoil endings, don't attack the author personally); second, a review of what was written, exactly as it will appear, before it posts. Both [[amazon]] and Yahoo! Video follow this shape.
 
-![Amazon.com lets customers write a review, then check it before submitting](../../raw/media/vanduyne-2006-advanced-e-commerce/G4.3a.png)
-
 - **Publish use policies and filter automatically** for profanity and outbound links before anything posts, and keep a human editor in the loop afterward — exhaustive pre-screening isn't realistic at volume, so spot-checking plus a "report this" path covers what filters miss. These policies sit alongside a site's broader fair-information and privacy practices (e.g. handling reviews from minors), which is worth involving legal counsel on given the liability exposure.
 - **Add meta-ratings.** A "was this review helpful?" vote (Amazon's approach) or a simple +1/0/−1 reputation score (eBay's buyer/seller feedback system) lets the community itself separate trustworthy reviews and reviewers from noise, without the site having to adjudicate quality directly. Implement the vote itself with an [[action-buttons|action button]].
 - **Prime the pump.** A new recommendation community needs enough reviews to look credible before it can grow further — surface reviews prominently next to the product they're about, make adding one easy, and consider a direct incentive (a contest, a small reward) for a site's very first reviewers.

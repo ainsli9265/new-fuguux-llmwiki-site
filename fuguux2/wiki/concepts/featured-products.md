@@ -14,8 +14,6 @@ updated: 2026-06-25
 
 **Solution:** build category-level pages that highlight a curated subset of products, editorialized rather than presented as a bare name/picture/price list:
 
-![Brooks Brothers' homepage recommends several products with editorial comments](../../raw/media/vanduyne-2006-advanced-e-commerce/G1.2.png)
-
 - **Editorialize.** A short description with personality (friendly, authoritative, wisecracking — whatever voice the site picks, applied consistently) substitutes for the salesperson a customer would get in a physical store, and makes the recommendation feel less like an algorithm.
 - **Offer different kinds of recommendations** for different shopper motivations — "Best-Sellers," "Editors' Picks," "Rare Finds," "New Releases," "On Sale" — since one customer wants what's popular while another wants what's cheap or what's new. Cross-reference what a recommendation is *for* (a product type, a brand, a price point, a gift) against [[category-pages|category pages]], [[search-action-module]], [[gift-giving]], and [[process-funnel|process-funnel-driven]] gift finders to decide which tool fits which need.
 - **Provide opportunities to explore** for visitors with no specific goal in mind — highlighting imagery and detail (rather than a dense list) compels browsing-minded customers to click through.

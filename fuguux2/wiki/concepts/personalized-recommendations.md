@@ -17,8 +17,6 @@ updated: 2026-06-25
 - **Avoid purely inferred data.** A page visit alone doesn't mean a customer wanted what's on that page — they might have clicked the wrong link or mistyped a search term. Recommendations built only on referrer logs or path data can ring hollow because the underlying signal is noisy.
 - **Make rating easy and immediate.** Letting customers rate products they've bought (or are just familiar with) gives a much more reliable signal than inference, but only if the friction is low — e.g. a rating control that updates the page instantly rather than requiring a form submission and reload.
 
-![Lands' End asks customers a short series of preference questions, then offers customized recommendations](../../raw/media/vanduyne-2006-advanced-e-commerce/G3.4a.png)
-
 - **Offer a short preference interview as an alternative to ratings**, especially for complex or unfamiliar product categories — a brief [[process-funnel|process funnel]] (Lands' End's clothing-preference questionnaire is the worked example) that ends in tailored suggestions. Keep it short and tell customers up front how long it'll take, since a long interview with unclear payoff invites abandonment.
 - **Explain *why* a recommendation was made**, in plain terms ("customers who liked X also liked these") rather than describing the algorithm — customers who don't understand or trust a recommendation's basis tend to ignore it.
 - **Show several recommendations at once, including ones the customer is known to already like.** This lets customers sanity-check the system themselves: if it's surfacing things they already know they like, they're more likely to trust the new suggestions mixed in alongside them.

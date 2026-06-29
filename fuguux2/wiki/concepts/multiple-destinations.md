@@ -14,8 +14,6 @@ updated: 2026-06-25
 
 **Solution:**
 
-![Walmart.com offers a "Ship to Multiple Addresses" option during checkout](../../raw/media/vanduyne-2006-advanced-e-commerce/G5.1.png)
-
 - **Offer the option explicitly during checkout**, via a "Ship to Multiple Addresses" [[action-buttons|action button]] at the point where the customer would otherwise enter one shipping address (Walmart's worked example).
 - **Reuse the existing address book.** For returning customers, show a pick list of previously-used addresses next to each product in the order, rather than asking them to re-enter destinations from scratch; first-time customers (with an empty address book) go straight to an address-entry form instead.
 - **Group the order summary by destination**, not just by product, so customers can verify each address's contents are correct before confirming — with an Edit [[action-buttons|action button]] on each address group, so a mistake doesn't require restarting the whole order. Carry the same per-destination grouping into the printable confirmation page.
