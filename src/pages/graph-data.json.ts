@@ -2,7 +2,8 @@ import { getCollection } from 'astro:content'
 import type { APIRoute } from 'astro'
 
 export const GET: APIRoute = async () => {
-  const entries = await getCollection('wiki')
+  const allEntries = await getCollection('wiki')
+  const entries = allEntries.filter(e => e.data.type !== 'overview')
   const slugSet = new Set(entries.map(e => e.id))
 
   const nodes = entries.map(e => ({
