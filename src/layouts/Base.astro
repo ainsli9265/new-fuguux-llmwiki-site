@@ -27,7 +27,7 @@ const byType = typeOrder.reduce(
   (acc, t) => {
     acc[t] = allEntries
       .filter(e => (e.data.type ?? 'other') === t)
-      .sort((a, b) => (a.data.title ?? a.id).localeCompare(b.data.title ?? b.id))
+      .sort((a, b) => a.id.localeCompare(b.id))
     return acc
   },
   {} as Record<string, typeof allEntries>
@@ -69,7 +69,7 @@ const byType = typeOrder.reduce(
                     href={`${base}/wiki/${entry.id}/`}
                     class={activeSlug === entry.id ? 'active' : ''}
                   >
-                    {entry.data.title ?? entry.id}
+                    {entry.id}
                   </a>
                 </li>
               ))}
