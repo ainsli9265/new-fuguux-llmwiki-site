@@ -3,9 +3,9 @@ import { remarkWikilinks } from './src/plugins/remark-wikilinks.mjs'
 
 export default defineConfig({
   site: 'https://ainsli9265.github.io',
-  base: '/quartzsite',
+  base: '/new-fuguux-llmwiki-site',
   markdown: {
-    remarkPlugins: [[remarkWikilinks, { base: '/quartzsite' }]],
+    remarkPlugins: [[remarkWikilinks, { base: '/new-fuguux-llmwiki-site' }]],
     shikiConfig: { theme: 'one-dark-pro' },
   },
 })
