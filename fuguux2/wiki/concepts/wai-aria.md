@@ -37,7 +37,3 @@ The consensus reason for rule 1 specifically: incorrect or contradictory ARIA ac
 ## Version history
 
 WAI-ARIA work began in 2006 (first published September 26, 2006); WAI-ARIA 1.0 reached W3C Recommendation status March 20, 2014; 1.1 followed December 14, 2017; 1.2 reached Recommendation status June 6, 2023.
-
-## Notes for the wiki
-
-A local snapshot is saved at `raw/safe/wikipedia-wai-aria.html` alongside the live URL. Licensed CC BY-SA 4.0, consistent with this wiki's other Wikipedia sources — content here is paraphrased, not quoted. Kept this page at the design-principle level (why custom widgets need this, the roles/states/properties model, the five-rules hierarchy) and deliberately left out attribute-syntax detail (specific `aria-*` attribute names and values beyond the two used as rule examples above) as "specific code implementation" per `purpose.md`'s scope — the same line drawn for Pattern Group L's image/HTML implementation detail.

@@ -2,10 +2,10 @@
 type: concept
 title: Typography
 tags: [typography, legibility, readability, typeface, visual-hierarchy, layout]
-related: [clear-first-reads, color-theory, accessibility, gestalt-psychology, grid-layout, wikipedia-2026-typography, wikipedia-2026-web-typography]
-sources: ["https://en.wikipedia.org/wiki/Typography", "https://en.wikipedia.org/wiki/Web_typography"]
+related: [clear-first-reads, color-theory, accessibility, gestalt-psychology, grid-layout, wikipedia-2026-typography, wikipedia-2026-web-typography, fuguux-2026-information-hierarchy-for-usability]
+sources: ["https://en.wikipedia.org/wiki/Typography", "https://en.wikipedia.org/wiki/Web_typography", fuguux-2026-information-hierarchy-for-usability.pdf]
 created: 2026-06-25
-updated: 2026-06-25
+updated: 2026-06-30
 ---
 
 # Typography
@@ -40,7 +40,7 @@ Typeface selection is also a **tone signal** that precedes reading: the typeface
 Even distribution is the goal: a well-composed text block creates transparency — the reader attends to the content, not the container. Several variables interact:
 
 - **Line length**: controls the number of saccadic jumps per line; three-to-four jumps is the comfortable upper bound
-- **Leading (line spacing)**: generous vertical space helps the eye distinguish lines and return accurately; tightly packed lines cause doubling errors (re-reading the same line)
+- **Leading (line spacing)**: generous vertical space helps the eye distinguish lines and return accurately; tightly packed lines cause doubling errors (re-reading the same line). For body text on screen, a line-height of **1.4–1.6× the font size** (CSS `line-height: 1.4` to `1.6`) covers most cases — slightly more generous than print conventions, to account for screen reading and variable display densities. Display text and headlines typically need less leading than body text.
 - **Justification**: full justification requires tight control of word spacing and hyphenation — standard software defaults rarely manage this well, leaving rivers of whitespace. Ragged-right setting is more reliable without expert intervention
 - **Underlining**: disrupts descending letters (p, g, y, q) that differentiate letterforms, reducing legibility; prefer weight or italic for emphasis
 - **Tracking and kerning**: overly tight or loose letter-spacing reduces readability; correct defaults assume normal reading distances and sizes
@@ -55,7 +55,7 @@ Overusing display techniques in body context — bold colors, multiple competing
 
 ## Typography in Digital Contexts
 
-Digital character encoding separates text presentation from content meaning, allowing identical text to reflow with context-appropriate typefaces across devices. Screen rendering constraints (anti-aliasing, pixel density, dark mode, operating-system font rendering) introduce variables that print does not face. The core principles — legibility, readability, appropriate tone, structural hierarchy — hold across media; the specific defaults adapt. WCAG luminance-contrast requirements (see [[accessibility]]) add a minimum measurable bar for typographic color contrast that print typography historically relied on judgment for.
+Digital character encoding separates text presentation from content meaning, allowing identical text to reflow with context-appropriate typefaces across devices. Screen rendering constraints (anti-aliasing, pixel density, dark mode, operating-system font rendering) introduce variables that print does not face. The core principles — legibility, readability, appropriate tone, structural hierarchy — hold across media; the specific defaults adapt. WCAG luminance-contrast requirements (see [[accessibility]]) add a minimum measurable bar for typographic color contrast that print typography historically relied on judgment for. A common screen-specific convention is to use very dark gray (e.g., #111 or #222) rather than pure black (#000) for body text on white backgrounds — the extreme contrast of pure black on white can contribute to visual fatigue during extended reading, even though it far exceeds WCAG minimums. This is a reading-comfort consideration distinct from accessibility compliance; it applies in contexts where text density is high and session length is long.
 
 ## Web Typography and Font Stacks
 

@@ -32,11 +32,11 @@ Generates several rough, alternative site designs — reflecting site structure 
 
 ## 3. Refinement
 
-Takes the chosen design and polishes its navigation, layout, and flow, iteratively refining and informally testing it. Typeface, image treatment, and color palettes get decided; the site gets broken into page *templates* (e.g. homepage, second-level page) rather than designing every page individually. Deliverable: a single set of medium-to-high-fidelity site maps, storyboards, and schematics, now rich with real images, icons, and color, for client sign-off.
+Takes the chosen design and polishes its navigation, layout, and flow, iteratively refining and informally testing it. Typeface, image treatment, and color palettes get decided; the site gets broken into [[page-template|page *templates*]] (e.g. homepage, second-level page) rather than designing every page individually. Deliverable: a single set of medium-to-high-fidelity site maps, storyboards, and schematics, now rich with real images, icons, and color, for client sign-off.
 
 ## 4. Production
 
-Produces a final, highly detailed set of deliverables embodying the chosen design, with patterns shifting toward more low-level, technical concerns (e.g. [[action-buttons]] for how buttons should look pressable). Typical deliverables: a **design document** (site maps/storyboards/schematics describing exact interaction flow), an **interactive prototype**, **technical specifications** (server, languages, database, performance targets, sometimes a feasibility prototype), **design guidelines** (fonts, link colors, logo placement — a standing reference to keep the site internally consistent), and **Web page templates** (reusable HTML skeletons for each page class).
+Produces a final, highly detailed set of deliverables embodying the chosen design, with patterns shifting toward more low-level, technical concerns (e.g. [[action-buttons]] for how buttons should look pressable). Typical deliverables: a **design document** (site maps/storyboards/schematics describing exact interaction flow), an **interactive prototype**, **technical specifications** (server, languages, database, performance targets, sometimes a feasibility prototype), **design guidelines** (fonts, link colors, logo placement — a standing reference to keep the site internally consistent), and **[[page-template|Web page templates]]** (reusable HTML skeletons for each page class).
 
 ## 5. Implementation
 

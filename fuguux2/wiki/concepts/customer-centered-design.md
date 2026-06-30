@@ -2,7 +2,7 @@
 type: concept
 title: Customer-Centered Design
 tags: [ux-process, usability-testing, design-philosophy]
-related: [web-design-patterns, process-funnel, action-buttons, know-your-customers, iterative-design, web-site-development-process, design-centering-styles, myths-of-customer-centered-design, yahoo, vanduyne-2006-web-design-patterns, vanduyne-2006-knowing-your-customers, vanduyne-2006-involving-customers, vanduyne-2006-customer-centered-web-design, wikipedia-2026-design-of-everyday-things]
+related: [web-design-patterns, process-funnel, action-buttons, know-your-customers, iterative-design, web-site-development-process, design-centering-styles, yahoo, vanduyne-2006-web-design-patterns, vanduyne-2006-knowing-your-customers, vanduyne-2006-involving-customers, vanduyne-2006-customer-centered-web-design, wikipedia-2026-design-of-everyday-things]
 sources: [vanDuyne_01_3PP_001-018.pdf, vanDuyne_02_3PP_019-038.pdf, vanDuyne_03_3PP_039-068.pdf, vanDuyne_04_3PP_069-096.pdf, "https://en.wikipedia.org/wiki/The_Design_of_Everyday_Things"]
 created: 2026-06-23
 updated: 2026-06-25
@@ -20,7 +20,7 @@ It rests on two pillars: [[know-your-customers]] — understanding people, their
 
 Customer-centered design isn't purely a quality nicety — it's argued to directly affect revenue. One cited case: an unnamed IBM site redesign that simplified and made navigation more consistent (after IBM noticed customers leaned heavily on search and help because they couldn't otherwise find things) led to a sharp drop in search/help reliance and a 400% jump in online sales within a week of launch. More generally, the source's own research found that a 5% increase in customer satisfaction was associated with a 25%-or-greater increase in revenue — driven by easier-to-find products (more repeat visits) and fewer support contacts/returns (lower cost). [[yahoo]] is offered as a standing example: its popularity is attributed less to visual design than to a fast, text-heavy, easy-to-use interface shaped by ongoing field studies, interviews, and usability evaluations baked into its development process.
 
-It's also explicitly contrasted with three design styles it argues against — company-centered, technology-centered, and designer-centered design — covered in [[design-centering-styles]] — and defended against nine common objections to investing in it, covered in [[myths-of-customer-centered-design]].
+It's also explicitly contrasted with three design styles it argues against — company-centered, technology-centered, and designer-centered design — and defended against nine common organizational objections to investing in it; both covered in [[design-centering-styles]].
 
 ## In practice: keeping customers involved
 

@@ -23,9 +23,3 @@ A practitioner-level how-to for running a usability test, part of Digital.gov's 
 - No special permission/approval is needed to test with a small number of people.
 - Best run at the draft-content stage, with a retest after revisions to confirm the fix worked.
 - Variants worth considering: co-discovery (two participants working together), remote moderated or unmoderated testing, and comparative testing between two versions.
-
-## Notes for the wiki
-
-A local snapshot is saved at `raw/safe/digitalgov-usability-testing.html` alongside the live URL. As a work of the U.S. federal government, this page is presumptively public domain under 17 U.S.C. § 105, consistent with the precedent set by [[uswds-2025-design-principles]]; no explicit license statement appears on the page itself.
-
-Folded the session-structure, recruiting, and scenario-writing specifics into [[usability-evaluation-methods]]'s "Informal evaluations" section — this source adds the concrete how-to layer on top of the think-aloud methodology *The Design of Sites* already describes there.

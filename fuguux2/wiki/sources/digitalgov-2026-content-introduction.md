@@ -27,9 +27,3 @@ Six ways to create useful, relevant content:
 6. **Provide appropriate access** — offer content in other languages based on actual audience need, and have a person validate machine translations before publishing them.
 
 Recommends conducting a full content audit at least once a year; cites the USDA's four-step audit process (set goals, establish scope, build a data-collection spreadsheet, then run the audit).
-
-## Notes for the wiki
-
-A local snapshot is saved at `raw/safe/digitalgov-introduction-to-content.html` alongside the live URL. As a work of the U.S. federal government, this page is presumptively public domain under 17 U.S.C. § 105, consistent with the precedent set by [[uswds-2025-design-principles]]; no explicit license statement appears on the page itself.
-
-This source corroborates and extends the "keep content current" / "remove content with care" point already flagged (but not yet folded in) from [[uswds-2025-design-principles]]'s "Earn Trust" principle — folded both into [[trust-and-credibility]] together. "Demonstrate authoritativeness" maps directly onto [[trust-and-credibility]]'s existing "signal legitimacy clearly" point. The annual content-audit practice was folded into [[web-site-development-process]]'s Maintenance phase. "Default to HTML" and "optimize for search" are implementation/SEO detail outside `purpose.md`'s scope and were not used.

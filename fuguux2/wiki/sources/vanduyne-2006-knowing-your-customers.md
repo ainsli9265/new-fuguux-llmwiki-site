@@ -23,7 +23,3 @@ Chapter 3 of *The Design of Sites*. Argues that [[customer-centered-design]] res
 - **Personas and scenarios** ([[personas-and-scenarios]]): context-rich stories and recurring fictional customers used to sanity-check design decisions before any software is built, illustrated with a worked "Victoria/ebirthdayz.com" example.
 - **Customer research methods** ([[customer-research-methods]]): ethnographic observation, interviews, surveys, and focus groups, each with distinct strengths, costs, and the recurring caveat that surveys and focus groups capture what people *say*, not what they *do*.
 - **Card sorting** ([[card-sorting]]): affinity diagramming and card sorting turn raw observation/interview data into a candidate information architecture.
-
-## Notes for the wiki
-
-No entities met the 2+ source threshold here either. The chapter cites several named individuals incidentally (Leysia Palen's 1999 group-calendar study, Douglas Engelbart's "tricycle vs. bicycle" quote, futurist Paul Saffo's "threshold of indignation" quote) and a named HCI law (Fitts's Law) — all mentioned inline in [[know-your-customers]] as supporting evidence rather than promoted to entity pages.

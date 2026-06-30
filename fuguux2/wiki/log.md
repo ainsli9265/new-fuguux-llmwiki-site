@@ -1,5 +1,94 @@
 # Research Log
 
+## 2026-06-30 (55)
+
+**WAI Web Accessibility Tutorials (W3C)**
+- `raw/safe/wai-tutorial-index.html` + 5 sub-pages: images, forms, menus, page-structure, carousels (W3C WAI, CC BY 4.0; 41–43 KB each). Triaged **safe**. No diagram images found (all images in overview pages are social/logo icons; tutorial step-by-step images reside on deeper sub-pages not saved).
+- **New source page**: [[wai-2026-tutorials]].
+- **New concept page**: [[navigation-menus]] — menu structure reflecting site IA; current-page signaling (visual distinctiveness, no color-only); flyout/dropdown constraints (dwell delay, keyboard + touch access, depth limit); visual conventions (horizontal bar, vertical sidebar, hamburger); mobile menus. Filed under Navigation > Cohesive menu groupings.
+- **Updated [[accessibility]]**: added image alt text taxonomy section (5 types: informative, decorative, functional, complex, image groups); added page structure section (heading hierarchy, landmark regions, skip links). Updated `related:` and `sources:`.
+- **Updated [[form-design]]**: added WAI-derived sections on grouping related fields and multi-page form progress. Extended validation section with dual-track error presentation (error summary + inline). Added input width affordance section. Updated `related:` and `sources:`.
+- **Updated [[interface-design-principles]]**: `related:` updated to include `wai-2026-tutorials`; carousel guidance (usability dispute, pause requirement) already present in existing principle 7 examples.
+- Excluded from WAI: Tables tutorial (accessible table markup — implementation, no new design principle); all ARIA attribute syntax and code examples; browser compatibility tables; WAI-ARIA authoring specifics already covered by [[wai-aria]].
+
+**GOV.UK Design System**
+- `raw/safe/govuk-design-system.html` + 13 component/pattern pages (GOV.UK, Open Government Licence v3.0; 50–643 KB each). Triaged **safe**. No diagram images found (GOV.UK pages contain component previews rendered as live HTML, not standalone image files).
+- **New source page**: [[govuk-2026-design-system]].
+- **New concept page**: [[site-header-and-footer]] — header zones (identity, primary nav, utility links); footer content (legal links, copyright, optional secondary nav); design principles (consistent position, minimal footprint, landmark structure). Fills Content Design > Consistent header and footer leaf (previously empty).
+- **Updated [[form-design]]**: added one-question-per-page principle (question pages pattern); validation-on-submit rule; error message writing conventions (instruction form vs. description form; match label language; be specific); radio/checkbox ordering and pre-selection conventions; "none of the above" exclusivity. Updated `related:` and `sources:`.
+- **Updated [[action-buttons]]**: added button hierarchy section (primary/start/secondary/warning/disabled); warning button + confirmation step rule; left-align in forms; double-click prevention. Updated `related:` and `sources:`.
+- **Updated [[notifications]]**: added notification banner section (two modes: neutral/success; banner blindness caveat; no simultaneous use with error summary); added error notifications in forms section (error summary at page top + inline messages; identical wording; page title "Error:" prefix). Added `sources:` frontmatter.
+- **Updated [[breadcrumb-navigation]]**: added current-page/trail structure section (omit current page as link; mobile collapse pattern); added when-not-to-use section (flat sites; linear transactional flows). Updated `related:` and `sources:`.
+- **Updated [[site-header-and-footer]] `related:`**: added `govuk-2026-design-system`.
+
+**Index, overview, and log**
+- **Updated [[index.md]]**: added `site-header-and-footer` under Content Design > Consistent header and footer; added `navigation-menus` under Navigation > Cohesive menu groupings; added both source pages to Sources section.
+- **Updated [[overview.md]]**: source count 41 → 43; concept count 69 → 71; navigation/layout and human-facing inputs summaries updated; accessibility summary updated; open gaps updated (Consistent header and footer now filled).
+- Excluded from GOV.UK: Nunjucks/HTML code examples throughout; GOV.UK One Login integration; GDS governance/contribution process; Select component (below design-guidance threshold); Textarea and Date input (implementation-heavy, below threshold); File upload (specialist); all WCAG 2.2 compliance checklists.
+
+## 2026-06-30 (54)
+
+- `raw/safe/wikipedia-favicon.html` (Wikipedia, CC BY-SA 4.0) — 236 KB. Triaged **safe**. 1 image extracted: `raw/media/wikipedia-favicon/favicon-in-browser-tab.png` (Wikipedia favicon in Firefox tab, 27 KB).
+- `raw/safe/wikipedia-breadcrumb-navigation.html` (Wikipedia, CC BY-SA 4.0) — 102 KB. Triaged **safe**. 1 image extracted: `raw/media/wikipedia-breadcrumb-navigation/breadcrumb-nav-example.png` (KDE Dolphin breadcrumb UI, 18 KB).
+- **New source pages** (2): [[wikipedia-2026-favicon]], [[wikipedia-2026-breadcrumb-navigation]].
+- **New concept page**: [[favicon]] — brand recognition at small sizes; credibility/performance implications of missing favicons; formats (ICO/PNG/SVG) and sizes (16–192 px); mobile home-screen icons (apple-touch-icon, Web Manifest); design guidance for legibility at 16×16; root-directory fallback. Fills Website Discoverability > Well-designed favicons.
+- **New concept page**: [[breadcrumb-navigation]] — three types (location/hierarchical, attribute/faceted, path/history); placement and separator conventions; when breadcrumbs fail and tags are better; relationship to [[multiple-ways-to-navigate]] and [[interface-design-principles]] (user control principle); SEO structured-data note; ARIA implementation. Fills Navigation > Functional back button.
+- **Updated index**: both concept pages placed in their leaf nodes; both source pages added to Sources section.
+- **Updated overview**: source count 39 → 41, Wikipedia count 21 → 23, concept count 67 → 69. All Website Discoverability and Navigation leaf nodes now have concept pages.
+- Excluded from favicon: MIME type history, per-browser compat tables, animated favicon support, full HTML syntax variants, browser selection logic for competing formats, phishing mechanism specifics.
+- Excluded from breadcrumb: desktop file manager implementations, alternative terminology, CSS/HTML implementation.
+
+## 2026-06-30 (53)
+
+- `raw/safe/wikipedia-search-engine-optimization.html` (Wikipedia, CC BY-SA 4.0) — SEO article, 270 KB. Triaged **safe**. 2 images extracted to `raw/media/wikipedia-search-engine-optimization/`: `pageranks-example.png` (PageRank network diagram, 75 KB), `demystifying-seo-viz.jpg` (SEO mind-map illustration, 64 KB).
+- **New source page**: [[wikipedia-2026-search-engine-optimization]].
+- **New concept page**: [[seo-basics]] — how search engines crawl/index/rank; getting indexed (XML sitemaps, robots.txt, noindex, internal linking depth); on-page factors (title tags, meta descriptions, URL structure, heading hierarchy, content freshness, canonicalization); mobile-first indexing; white/black/grey hat; international SEO (pointer to [[internationalization]]); algorithm instability. Fills three Website Discoverability leaf nodes: Search engine entry points, Human-readable URLs, Search-engine optimized site.
+- **Updated index**: [[seo-basics]] added under three leaf nodes in Approachability > Website Discoverability; [[wikipedia-2026-search-engine-optimization]] added to Sources.
+- **Updated overview**: source count 38 → 39, Wikipedia article count 20 → 21, concept count 66 → 67; removed `seo-basics.md` from open gaps (now written); Well-designed favicons remains as the last empty Website Discoverability leaf.
+- Excluded: deep link-building strategy, black hat technique mechanics, legal cases (SearchKing, KinderStart), GEO/AEO (too new), SEM advertising campaign design, detailed algorithm change history (Panda/Penguin/Hummingbird/BERT).
+
+## 2026-06-30 (52)
+
+- Merged [[myths-of-customer-centered-design]] into [[design-centering-styles]]. Both pages shared one source (`vanDuyne_01_3PP_001-018.pdf`), existed solely as supporting context for [[customer-centered-design]], and had no cross-linking peer network beyond it. The nine objections are now a `## Common objections` section in `design-centering-styles.md`. `myths-of-customer-centered-design.md` deleted.
+- Updated 7 files with inbound links: `customer-centered-design` (related: + body), `trust-and-credibility` (related: + body), `accessibility` (related: + body), `vanduyne-2006-customer-centered-web-design` (related: + body), `index.md` (merged two entries into one), `overview.md` (body + related:).
+
+## 2026-06-30 (51)
+
+- Lint pass (111 files): no missing files, no broken links. Findings and fixes applied.
+- **Link fixes**: 6 concept pages (`grid-layout`, `category-pages`, `expanding-and-fixed-screen-width`, `multiple-ways-to-navigate`, `homepage-portal`, `web-site-development-process`) had plain-text "page template" references — converted all to `[[page-template]]`; removed stale note in `grid-layout` that called page-template "not yet documented in this wiki."
+- **Cross-link added**: `[[ab-testing]]` wikilink added to `usability-evaluation-methods` body (A/B testing paragraph); `ab-testing` added to its `related:` array.
+- **`related:` frontmatter additions** (6 files): `page-template` ← `interface-design-principles`, `quick-flow-checkout`; `accessibility` ← `myths-of-customer-centered-design`; `progressive-disclosure` ← `clean-product-details`, `process-funnel`, `quick-flow-checkout`; `grid-layout` ← `page-template`; `loading-states` ← `auto-save`; `interface-design-principles` ← `seven-stages-of-action`.
+- **Index placement corrections** (3): `browsable-content` moved from Content Design > High quality text content → Navigation > Consistent navigation links; `content-organization-schemes` moved from Content Design > High quality text content → Navigation > Cohesive menu groupings; `interface-design-principles` moved from Human-Facing Inputs > Interpretable error messages leaf → Human-Facing Inputs H3 level (cross-section foundational concept).
+- **New concept page**: [[notifications]] — toast/banner/modal severity taxonomy and alert-fatigue risk (body draws on common knowledge and content already in `interface-design-principles`); user preference controls (opt-in/opt-out, digest mode, per-channel); push notification permission timing. Added to index under Functionality > User-Tailored Content > Manageable notifications. Back-reference added to `interface-design-principles` `related:`.
+- **New concept page**: [[cognitive-load]] — Sweller's three-type model (intrinsic/extraneous/germane); Miller's 7±2 and Cowan's 4±1 working-memory limits; design application; connections to [[hicks-law]], [[progressive-disclosure]], [[gestalt-psychology]], [[seven-stages-of-action]], [[fitts-law]], [[interface-design-principles]]. Added to index at Human-Facing Inputs H3 level alongside `interface-design-principles`. Back-references added to `hicks-law` and `progressive-disclosure` `related:`.
+
+## 2026-06-30 (50)
+
+- `raw/copyrighted/reform-free-chapters-and-tips.pdf` (*ReForm: Free Chapters and Tips* — 6-page PDF of sample chapters from a commercial book on form design; free to download but no stated open license). Triaged **copyrighted**. 5 images extracted to `raw/media/reform-free-chapters-and-tips/` (form mockup screenshots, p2–p6).
+- No source page created (copyrighted). No `sources:` frontmatter updated.
+- **New concept page** (1): [[auto-save]] — automatically persisting user input without an explicit save action; save-state status indicators (saving/saved/error); debounced timing; offline resilience via browser storage. Body draws on common knowledge (Google Docs, Notion, Figma). `## Further reading` points to this source for the annotated Google Docs walkthrough.
+- **Added `## Further reading` sections** to 3 pages: [[progressive-disclosure]] — checkbox-gated optional form sections pattern; [[form-design]] — auto-save status indicators, locale-specific field adaptation, escape hatches on verification screens; [[internationalization]] — Russian address form as locale-specific field adaptation example.
+- **Updated [[index.md]]**: added [[auto-save]] (after modal-dialogs).
+- Excluded: the source's progressive-disclosure, data-saving, and locale-difference content was referenced via `## Further reading` only per copyrighted-source rules — no body content drawn from it. Author unknown (no byline in PDF). The form mockup images (p2–p6) are in `raw/media/` but cannot be embedded in wiki pages.
+
+## 2026-06-30 (49)
+
+- `raw/safe/fuguux-2026-information-hierarchy-for-usability.pdf` (FuguUX internal "Web Site Heuristics" document — 37 pages, hierarchical checklist across eight web sections plus Mobile, Accessibility, QA, and First Impressions). Triaged safe: FuguUX owns the document. No extractable images (0 found). Source page created: [[fuguux-2026-information-hierarchy-for-usability]].
+- **New concept pages** (2): [[modal-dialogs]] — on-screen positioning, Escape/close/focus trapping, context-specific labels, forms-in-modals tradeoff, attention cost guidance. [[internationalization]] — URL/ccTLD/subdirectory strategy, hreflang tags, CMS requirements, text expansion design, RTL support, localized currency/date/time formats.
+- **Updated [[accessibility]]**: added keyboard/focus section (visible focus indicators, skip-to-content link, modal focus trapping pattern, form label association vs. placeholder-only); distinguished decorative images (empty `alt=""`) from functional images (descriptive alt); added icon-only button accessible names (`aria-label`); added ARIA live regions for dynamic content. Updated `related:` and `sources:` to include fuguux document and [[modal-dialogs]].
+- **Updated [[trust-and-credibility]]**: added domain type as credibility signal (.edu/.gov vs .com, custom domain vs hosted subdomain); third-party credentials with linkable verification; limit generic stock photography (authenticity signal). Updated `related:` and `sources:`.
+- **Updated [[action-buttons]]**: added verb-label guidance (action-oriented verb phrases over noun labels); chevron/+ icon to signal "more choices" vs. immediate action; grouped button selection state requirement. Updated `related:` and `sources:`.
+- **Updated [[typography]]**: added numeric line-height recommendation (1.4–1.6× font size for screen body text) to Leading bullet in Text Composition; added pure-black avoidance note (very dark gray reduces visual fatigue for dense/extended text) to Digital Contexts section. Updated `related:` and `sources:`.
+- **Updated [[form-design]]**: added Enter-key behavior expectation (advance to next field or submit); no-reset-button guidance (unrecoverable data loss, benefit near-zero); don't-disable-submit guidance (prevents feedback — show errors instead). Added `sources:` field (previously absent). Updated `related:`.
+- **Updated [[interface-design-principles]]**: extended principle 7 (minimalism) with concrete violation examples (animations without status meaning, competing CTAs, auto-advancing carousels, stacked pop-ups, excess typefaces); added notification/alert pattern to principle 2 (feedback) covering alert fatigue, auto-dismiss, manual dismiss, and toast/banner/modal severity taxonomy. Updated `related:` and `sources:`.
+- **Updated [[browsable-content]]**: extended information scent bullet to cover nav label and link text specifically — "click here"/"learn more" carry no scent; false-scent risk from non-link text that looks like links. Updated `related:` and `sources:`.
+- **Updated [[index.md]]**: added [[modal-dialogs]] (after form-design), [[internationalization]] (after typography), [[fuguux-2026-information-hierarchy-for-usability]] (after wikipedia-2026-progressive-disclosure in Sources).
+- Excluded: Section 6 (Web Development Foundations) — HTML/CSS/JS specifics, entirely out of scope per purpose.md. Email Heuristics (pp. 20–24) — email-specific design patterns, out of scope (not UI/UX web design). Performance Section Lighthouse metrics (LCP, FID, TTFB, FCP, FMP, FP) — tooling/measurement specifics, not design principles. Standards and Compliance security specifics (XSS prevention, SQL injection, URL mucking) — code implementation detail, out of scope. Specific browser keyboard shortcut list (Ctrl-A, Back/Forward, etc.) — browser implementation detail, not design guidance. Privacy policy legal specifics (GDPR, CCPA, specific consent language) — legal domain, out of scope. QA Heuristics section as a standalone concept — functional testing checklist, not design principles; content already covered by existing pages. First Impressions "wow factor" specifics (micro-interaction implementation, motion-design specifics) — production-level detail below concept-page threshold. Specific SEO metadata rules (title tag character limits, meta description formulas) — SEO implementation, borderline scope; omitted as closer to implementation than design principle.
+
+## 2026-06-29
+
+- Removed `## Notes for the wiki` sections from 36 pages — content already reflected in prior log entries. One item not yet placed: USWDS "Earn Trust" also covers **publishing open code/data** as a trust signal; this specific point has no current page home in [[trust-and-credibility]] and was not folded in during session 12 (flagged there only as "documented in source page for future pass"). Worth adding when a second source reinforces the transparency angle.
+
 ## 2026-06-26 (48)
 
 - Wikipedia "Progressive disclosure" → `raw/safe/wikipedia-progressive-disclosure.html` (CC BY-SA 4.0), source page [[wikipedia-2026-progressive-disclosure]]. Short article (stub-length). No new concept page created — [[progressive-disclosure]] was written this session during the lint pass; updated it with this source's additions.

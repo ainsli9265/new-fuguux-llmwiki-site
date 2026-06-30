@@ -12,15 +12,225 @@
 - [[lands-end]] — clothing retailer cited as the worked example for preference-interview-driven personalized recommendations
 - [[barnes-and-noble]] — bookseller cited in Pattern Groups F and G for wish list design (persistent saved-item list, easy cart transfer)
 
-## Concepts
+---
+
+## Delight
+
+*How a site looks, reads, navigates, and responds to input.*
+
+### Visual Design
+
+**Consistent visual design**
+- [[page-template]] — reusable structural layout per page type (homepage, category, detail, results) that holds navigation and content regions in fixed, predictable positions across all pages of that class
+
+**Organized grid layout**
+- [[grid-layout]] — dividing a page into a consistent row/column structure so customers can predict where things live
+- [[above-the-fold]] — keeping the most important content visible without scrolling, despite unknowable screen sizes
+
+**Clear visual hierarchy**
+- [[clear-first-reads]] — giving each page one dominant visual element, via color/size/font/position, that unifies it
+- [[visual-hierarchy]] — ordering elements by importance using color, size, alignment, and character contrast; Von Restorff (isolation) effect; squint test for evaluation
+
+**Harmonious color theory**
+- [[color-theory]] — color mixing (RGB/CMYK), color-wheel schemes (complementary, analogous, triadic), Chevreul's three contrast types, and the cultural limits of color harmony and symbolism as universal design rules
+
+**Effective multimedia content**
+*(no concept page yet)*
+
+**Logically grouped elements**
+- [[gestalt-psychology]] — the perceptual-organization principles (proximity, similarity, closure, continuity, common fate, symmetry, figure-ground, law of past experience) behind grouping and focal-point design
+
+**Readable text and typography**
+- [[typography]] — legibility vs. readability distinction; typeface selection by content category; text composition (line length, leading, justification, tracking); display vs. text typography; typeface as tone signal
+
+**Relevant images**
+*(no concept page yet)*
+
+### Content Design
+
+**Consistent header and footer**
+- [[site-header-and-footer]] — the persistent header (brand identity, primary nav, utility links) and footer (legal links, copyright, secondary nav) that bracket every page; design and consistency principles
+
+**High quality text content**
+*(no concept page yet)*
+
+**Impactful key pages**
+- [[homepage-portal]] — the homepage as highest-leverage page, balancing brand, content, personalization, navigation, and download speed
+- [[up-front-value-proposition]] — a persuasive, unique one-sentence promise, arrived at via team brainstorming and customer testing
+
+### Navigation
+
+**Standard navigation placements**
+- [[multiple-ways-to-navigate]] — supporting both intention- and impulse-driven navigation (search/browse/next-step vs. relate/promote), placed according to which motivator each tool serves
+- [[search-action-module]] — a simple, consistently-placed search box + button on every page, with an optional category selector for large sites
+- [[straightforward-search-forms]] — avoiding Boolean syntax and exact-match dead ends so search forms forgive imprecise queries
+- [[organized-search-results]] — relevant summaries, grouping, log-tuned terms, and task support on a search-results page
+
+**Consistent navigation links**
+- [[consistent-sidebars-of-related-content]] — surfacing related links in a consistently-placed, length-capped sidebar
+- [[browsable-content]] — organizing content for browsing rather than searching, information scent, and finding-your-way-back cues
+
+**Consistent navigation branding**
+- [[category-pages]] — keeping a site's distinct sections recognizably part of one whole, via consistent layout and a clear "arrival" signal
+
+**Cohesive menu groupings**
+- [[hicks-law]] — William Hick's 1952 law relating decision time to the number of choices (logarithmically, and only when the choices are organized), with implications for menu design and progressive disclosure
+- [[content-organization-schemes]] — five combinable schemes (hierarchical, task-based, alphabetical, chronological, popularity-based) for grouping browsable content
+- [[navigation-menus]] — menu structure reflecting site IA; signaling current page; flyout/dropdown design constraints; visual conventions; mobile menus
+
+**Functional back button**
+- [[breadcrumb-navigation]] — hierarchical trail showing location in site structure; three types (location, attribute, path); placement conventions; when breadcrumbs fail and tags are better; ARIA implementation
+
+**Obvious links and buttons**
+- [[affordance]] — what an environment/object makes possible and perceivable (Gibson vs. Norman), signifiers, and the perceivable/hidden/false split
+
+### Human-Facing Inputs
+
+- [[interface-design-principles]] — seven principles (consistency, feedback, recognition over recall, error recovery, control and freedom, accelerators, minimalism) for applying patterns across all input categories below
+- [[cognitive-load]] — working memory capacity limits (Miller's 7±2, Cowan's 4±1); intrinsic vs. extraneous vs. germane load; the psychological mechanism underlying Hick's Law, progressive disclosure, and Gestalt grouping
+
+**User-centric modal dialogue boxes**
+- [[modal-dialogs]] — on-screen positioning, Escape/close/focus conventions, context-specific button labels, and when a full page is preferable
+
+**Easy-to-use forms**
+- [[form-design]] — visible labels, input-width affordance, option selectors, validation placement, progress indicators, and modal form tradeoffs
+
+**Standard interface inputs**
+- [[action-buttons]] — shading a button to signal it's clickable, leveraging real-world and learned-GUI knowledge
+- [[fitts-law]] — Paul Fitts's 1954 law relating target-selection time to distance and target size, plus its design implications (infinite edges, magic corners, touchscreen sizing) and related laws (Hick's Law, the steering law)
+- [[loading-states]] — empty states, skeleton screens vs. spinners, button loading state stability, and timing patterns for fast and slow operations
+
+**Interpretable error messages**
+- [[seven-stages-of-action]] — Norman's action-cycle model (four execution + three evaluation stages), the gulf of execution and gulf of evaluation, and the four design principles it distills to
+
+**Friction for error prevention**
+- [[progressive-disclosure]] — revealing only what is needed for the current step and deferring additional detail on demand, to reduce decision load and cognitive overhead
+
+**Reversible input actions**
+- [[auto-save]] — automatically persisting user input without an explicit save action, with save-state status indicators
+
+---
+
+## Approachability
+
+*How a site serves the full range of users, contexts, and devices.*
+
+### Accessible Content
+
+**Internationalized content**
+- [[internationalization]] — i18n/l10n: URL structure for multi-locale sites, hreflang, designing for text expansion/RTL, and localized date/currency/time formats
+
+**Accessible design and development**
+- [[accessibility]] — designing so perceptual/physical variation among customers (e.g., color vision deficiency) doesn't lock anyone out
+- [[wcag]] — the W3C's Web Content Accessibility Guidelines: POUR principles, guideline/success-criteria/conformance structure, version history (1.0–3.0 draft), and jurisdiction-specific legal mandates
+- [[wai-aria]] — WAI-ARIA: roles/states/properties metadata for custom dynamic widgets, the accessibility tree, and the Five Rules of ARIA (prefer native HTML first)
+
+### Website Discoverability
+
+**Search engine entry points**
+- [[seo-basics]] — how crawlers discover pages; XML sitemaps; robots.txt and noindex; internal linking depth
+
+**Human-readable URLs**
+- [[seo-basics]] — descriptive hyphenated URL slugs; URL canonicalization; avoiding parameter-based URLs
+
+**Well-designed favicons**
+- [[favicon]] — brand recognition at small sizes; credibility and performance implications of missing favicons; formats (ICO/PNG/SVG), standard sizes, and mobile home-screen icons
+
+**Search-engine optimized site**
+- [[seo-basics]] — title tags; meta descriptions; heading hierarchy; content quality and freshness; white/black/grey hat distinction; mobile-first indexing; algorithm stability
+
+**Credible website content**
+- [[trust-and-credibility]] — earning and re-earning customer trust via legitimacy signals, data protection, reliability, and honest communication
+
+### Standards and Compliance
+
+**Basic web privacy**
+*(out of scope — implementation-level; see purpose.md)*
+
+**Basic security compliance**
+*(out of scope — implementation-level; see purpose.md)*
+
+### Responsive Design
+
+**Responsive screen sizes and orientation**
+- [[responsive-web-design]] — making pages render usably across all screen sizes via fluid grids, flexible images, and breakpoint-driven layout shifts
+- [[mobile-first-design]] — sequencing strategy: design for the smallest, most constrained device first, then progressively enhance for larger screens
+- [[expanding-and-fixed-screen-width]] — letting a layout stretch to fill the browser vs. holding it to a fixed, readable width
+
+**Web browser compatibility**
+*(out of scope — implementation-level)*
+
+**Standard touchscreen gestures**
+*(out of scope — implementation-level)*
+
+**Touchscreen design**
+*(no concept page yet)*
+
+---
+
+## Functionality
+
+*How a site performs, personalizes, and maintains technical integrity.*
+
+### Performance
+
+**Fast loading time**
+*(perceived performance and loading feedback covered under Standard interface inputs — see [[loading-states]])*
+
+**Fast network performance**
+*(out of scope — implementation-level; see purpose.md)*
+
+### HTML
+*(out of scope — implementation-level; see purpose.md)*
+
+### CSS
+*(out of scope — implementation-level; see purpose.md)*
+
+### Javascript
+*(out of scope — implementation-level; see purpose.md)*
+
+### Standard Browser Functionality
+*(out of scope — browser internals; see purpose.md)*
+
+### User-Tailored Content
+
+**Manageable individualized content**
+- [[personalized-recommendations]] — recommendations from deliberate signals (ratings, preference interviews) rather than noisy inferred browsing data, with privacy disclosure
+- [[featured-products]] — curated, editorialized product lists (Best-Sellers, Editors' Picks, On Sale) for browsing-minded customers
+- [[recommendation-community]] — customer reviews: a write/preview funnel, use policies and filtering, and meta-ratings for surfacing trustworthy reviews
+
+**Manageable notifications**
+- [[notifications]] — toast/banner/modal severity taxonomy; alert fatigue; opt-in vs. opt-out defaults; per-channel user control; push notification permission timing
+
+### Valid Content
+*(out of scope — technical QA; see purpose.md)*
+
+---
+
+## E-commerce Patterns
+
+*Domain-specific application of Delight and Functionality concepts to transactional sites.*
+
+- [[process-funnel]] — a step-by-step page sequence (e.g., checkout) designed to minimize distraction and drop-off
+- [[quick-flow-checkout]] — distraction-free checkout funnel: deal-breakers upfront, guest path, address/shipping/payment steps, pre-submission order summary, confirmation
+- [[clean-product-details]] — product page template: above-fold decision elements (thumbnail, price, Add to Cart) and below-fold research elements (full description, reviews, related products)
+- [[shopping-cart]] — holding area for items before checkout: persistent carts, item details, wish lists, cross-sell, localized terminology
+- [[easy-returns]] — return policy visibility on every page and a self-service return funnel with trackable labels
+- [[cross-selling-and-up-selling]] — recommending accessories or upgrades related to a customer's current choice, kept visually secondary and repeated at checkout
+- [[multiple-destinations]] — shipping different items in one order to different addresses, with a destination-grouped order summary
+- [[gift-giving]] — price-hiding packing slips, per-item gift notes and wrap pricing, and a gift-finder recommendation flow
+- [[order-tracking-and-history]] — self-service order history, modification, and shipment tracking
+
+---
+
+## Research & Process
+
+*Design methodology: how to learn about users and run a design project. Not represented in the output hierarchy above.*
 
 - [[web-design-patterns]] — reusable problem/solution pairs for UI/UX, organized into an interconnected pattern language and grouped A–M by design-process stage
 - [[customer-centered-design]] — building design decisions around customers' existing expectations and validating them through direct observation
-- [[action-buttons]] — shading a button to signal it's clickable, leveraging real-world and learned-GUI knowledge
-- [[search-action-module]] — a simple, consistently-placed search box + button on every page, with an optional category selector for large sites
-- [[process-funnel]] — a step-by-step page sequence (e.g., checkout) designed to minimize distraction and drop-off
+- [[design-centering-styles]] — competing design philosophies (company-, technology-, designer-centered) contrasted against customer-centered design; nine common organizational objections rebutted
 - [[know-your-customers]] — balancing people, tasks, technology, and social context before designing anything
-- [[accessibility]] — designing so perceptual/physical variation among customers (e.g., color vision deficiency) doesn't lock anyone out
 - [[task-analysis]] — cataloging what customers currently do and want to do before designing a solution
 - [[personas-and-scenarios]] — fictional customers and context-rich stories used to sanity-check design decisions early
 - [[customer-research-methods]] — observation, interviews, surveys, and focus groups for learning about customers
@@ -29,52 +239,10 @@
 - [[rapid-prototyping]] — site maps, storyboards, schematics, and the low-to-high-fidelity prototyping spectrum
 - [[usability-evaluation-methods]] — expert/heuristic review, informal think-aloud testing, and formal bottom-line usability studies
 - [[ab-testing]] — comparing two live versions of a page differing by one variable to measure which produces better behavioral outcomes; quantitative complement to qualitative usability testing
-- [[interface-design-principles]] — seven principles (consistency, feedback, recognition over recall, error recovery, control and freedom, accelerators, minimalism) for applying patterns
-- [[web-site-development-process]] — the seven-phase project process (Discovery, Exploration, Refinement, Production, Implementation, Launch, Maintenance) that embeds iterative design and customer-centered design at every stage
-- [[design-centering-styles]] — company-, technology-, and designer-centered design contrasted against customer-/user-centered design
-- [[myths-of-customer-centered-design]] — nine common objections to investing in customer-centered design, rebutted
-- [[homepage-portal]] — the homepage as highest-leverage page, balancing brand, content, personalization, navigation, and download speed
-- [[up-front-value-proposition]] — a persuasive, unique one-sentence promise, arrived at via team brainstorming and customer testing
-- [[grid-layout]] — dividing a page into a consistent row/column structure so customers can predict where things live
-- [[page-template]] — reusable structural layout per page type (homepage, category, detail, results) that holds navigation and content regions in fixed, predictable positions across all pages of that class
-- [[above-the-fold]] — keeping the most important content visible without scrolling, despite unknowable screen sizes
-- [[clear-first-reads]] — giving each page one dominant visual element, via color/size/font/position, that unifies it
-- [[expanding-and-fixed-screen-width]] — letting a layout stretch to fill the browser vs. holding it to a fixed, readable width
-- [[responsive-web-design]] — making pages render usably across all screen sizes via fluid grids, flexible images, and breakpoint-driven layout shifts
-- [[mobile-first-design]] — sequencing strategy: design for the smallest, most constrained device first, then progressively enhance for larger screens
-- [[consistent-sidebars-of-related-content]] — surfacing related links in a consistently-placed, length-capped sidebar
-- [[straightforward-search-forms]] — avoiding Boolean syntax and exact-match dead ends so search forms forgive imprecise queries
-- [[organized-search-results]] — relevant summaries, grouping, log-tuned terms, and task support on a search-results page
-- [[trust-and-credibility]] — earning and re-earning customer trust via legitimacy signals, data protection, reliability, and honest communication
-- [[wcag]] — the W3C's Web Content Accessibility Guidelines: POUR principles, guideline/success-criteria/conformance structure, version history (1.0–3.0 draft), and jurisdiction-specific legal mandates
-- [[wai-aria]] — WAI-ARIA: roles/states/properties metadata for custom dynamic widgets, the accessibility tree, and the Five Rules of ARIA (prefer native HTML first)
 - [[usability-engineering]] — the research-focused discipline behind usability testing: its 1988/1993 origins, the five usability attributes, ISO 9241's definition, and the slip/mistake error taxonomy
-- [[multiple-ways-to-navigate]] — supporting both intention- and impulse-driven navigation (search/browse/next-step vs. relate/promote), placed according to which motivator each tool serves
-- [[browsable-content]] — organizing content for browsing rather than searching, information scent, and finding-your-way-back cues
-- [[content-organization-schemes]] — five combinable schemes (hierarchical, task-based, alphabetical, chronological, popularity-based) for grouping browsable content
-- [[category-pages]] — keeping a site's distinct sections recognizably part of one whole, via consistent layout and a clear "arrival" signal
-- [[affordance]] — what an environment/object makes possible and perceivable (Gibson vs. Norman), signifiers, and the perceivable/hidden/false split
-- [[gestalt-psychology]] — the perceptual-organization principles (proximity, similarity, closure, continuity, common fate, symmetry, figure-ground, law of past experience) behind grouping and focal-point design
-- [[fitts-law]] — Paul Fitts's 1954 law relating target-selection time to distance and target size, plus its design implications (infinite edges, magic corners, touchscreen sizing) and related laws (Hick's Law, the steering law)
-- [[hicks-law]] — William Hick's 1952 law relating decision time to the number of choices (logarithmically, and only when the choices are organized), with implications for menu design and progressive disclosure
-- [[progressive-disclosure]] — revealing only what is needed for the current step and deferring additional detail on demand, to reduce decision load and cognitive overhead
-- [[featured-products]] — curated, editorialized product lists (Best-Sellers, Editors' Picks, On Sale) for browsing-minded customers
-- [[cross-selling-and-up-selling]] — recommending accessories or upgrades related to a customer's current choice, kept visually secondary and repeated at checkout
-- [[personalized-recommendations]] — recommendations from deliberate signals (ratings, preference interviews) rather than noisy inferred browsing data, with privacy disclosure
-- [[recommendation-community]] — customer reviews: a write/preview funnel, use policies and filtering, and meta-ratings for surfacing trustworthy reviews
-- [[multiple-destinations]] — shipping different items in one order to different addresses, with a destination-grouped order summary
-- [[gift-giving]] — price-hiding packing slips, per-item gift notes and wrap pricing, and a gift-finder recommendation flow
-- [[order-tracking-and-history]] — self-service order history, modification, and shipment tracking
-- [[quick-flow-checkout]] — distraction-free checkout funnel: deal-breakers upfront, guest path, address/shipping/payment steps, pre-submission order summary, confirmation
-- [[clean-product-details]] — product page template: above-fold decision elements (thumbnail, price, Add to Cart) and below-fold research elements (full description, reviews, related products)
-- [[shopping-cart]] — holding area for items before checkout: persistent carts, item details, wish lists, cross-sell, localized terminology
-- [[easy-returns]] — return policy visibility on every page and a self-service return funnel with trackable labels
-- [[seven-stages-of-action]] — Norman's action-cycle model (four execution + three evaluation stages), the gulf of execution and gulf of evaluation, and the four design principles it distills to
-- [[color-theory]] — color mixing (RGB/CMYK), color-wheel schemes (complementary, analogous, triadic), Chevreul's three contrast types, and the cultural limits of color harmony and symbolism as universal design rules
-- [[typography]] — legibility vs. readability distinction; typeface selection by content category; text composition (line length, leading, justification, tracking); display vs. text typography; typeface as tone signal
-- [[visual-hierarchy]] — ordering elements by importance using color, size, alignment, and character contrast; Von Restorff (isolation) effect; squint test for evaluation
-- [[form-design]] — visible labels, input-width affordance, option selectors, validation placement, progress indicators, and modal form tradeoffs
-- [[loading-states]] — empty states, skeleton screens vs. spinners, button loading state stability, and timing patterns for fast and slow operations
+- [[web-site-development-process]] — the seven-phase project process (Discovery, Exploration, Refinement, Production, Implementation, Launch, Maintenance) that embeds iterative design and customer-centered design at every stage
+
+---
 
 ## Sources
 
@@ -115,6 +283,12 @@
 - [[wikipedia-2026-web-colors]] — Wikipedia's article on web colors: hex notation, named colors, CSS color models (RGB/HSL), web-safe palette history, and WCAG contrast ratios
 - [[wikipedia-2026-web-typography]] — Wikipedia's article on web typography: web-safe fonts, font stack fallback mechanism, generic families, web fonts vs. performance, image replacement anti-pattern
 - [[wikipedia-2026-progressive-disclosure]] — Wikipedia's article on progressive disclosure: definition, macOS print dialog as the canonical example, theme park queue as a physical-world analogy
+- [[fuguux-2026-information-hierarchy-for-usability]] — FuguUX internal heuristics checklist for web sites: eight web design sections plus mobile, accessibility, QA, and first-impressions checklists; new content folded into [[modal-dialogs]], [[internationalization]], [[accessibility]], [[action-buttons]], [[form-design]], [[typography]], [[trust-and-credibility]], [[interface-design-principles]], and [[browsable-content]]
+- [[wikipedia-2026-search-engine-optimization]] — Wikipedia's SEO article: crawling/indexing/ranking, on-page factors, mobile-first indexing, white/black/grey hat distinction, international SEO, PageRank; new content in [[seo-basics]]
+- [[wikipedia-2026-favicon]] — history (IE5, 1999), formats (ICO/PNG/SVG), sizes, mobile home-screen icons, performance/security implications; new content in [[favicon]]
+- [[wikipedia-2026-breadcrumb-navigation]] — three breadcrumb types (location, attribute, path), placement, separator conventions, usability limits; new content in [[breadcrumb-navigation]]
+- [[wai-2026-tutorials]] — W3C WAI tutorials (CC BY 4.0): Images, Forms, Menus, Page Structure, Carousels; new content in [[accessibility]], [[form-design]], [[navigation-menus]], [[interface-design-principles]]
+- [[govuk-2026-design-system]] — GOV.UK Design System (OGL v3.0): components and patterns for accessible government services; new content in [[form-design]], [[action-buttons]], [[notifications]], [[site-header-and-footer]], [[breadcrumb-navigation]]
 
 ## Queries
 

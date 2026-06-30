@@ -34,7 +34,3 @@ WCAG conformance is a binding legal requirement in many jurisdictions, generally
 - **Canada, Australia**, and others reference WCAG 2.0 or 2.1 AA in their own accessibility regulations, in some cases (Canada's 2012 *Jodhan* Supreme Court decision) reinforced directly by litigation rather than statute alone.
 
 This pattern — a single technical standard, adopted piecemeal and at different version/level combinations by different regulators — is why [[accessibility]] frames legal compliance as "near-universal but not uniform," rather than naming one law as authoritative.
-
-## Notes for the wiki
-
-Both Wikipedia sources used here are licensed **CC BY-SA 4.0**, not public domain — content below is paraphrased rather than quoted, consistent with the precedent set when [[wikipedia-2026-web-accessibility]] was first ingested. This page also corrects a figure introduced during that earlier ingestion: [[accessibility]] briefly stated WCAG 2.0 has 65 success criteria, sourced from an AI-summarized `WebFetch` pass over the first Wikipedia article. Reading this second article's raw text directly confirms the correct figure is **61** (verified against the literal phrase "testable success criteria (61 in all)" in the saved HTML snapshot) — the 65 figure was a small-model summarization error, not a real contradiction between sources. Corrected in both places.

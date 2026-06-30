@@ -31,16 +31,6 @@ The source article names interface design directly (radio-button placement), alo
 
 The theory is criticized as more descriptive than explanatory: it names reliable perceptual effects without a precise, agreed mechanism for *why* the visual system organizes information this way, and critics note the laws can sound vague when stated loosely ("things that go together, go together"). For design purposes this isn't disqualifying — the principles are well-replicated descriptions of what people actually perceive, which is what a layout pattern needs, even without a settled account of the underlying neuroscience.
 
-## Notes for the wiki
-
 ## Further reading
 
 Victor Ponamariov's *50 Tips to Improve User Interface* (self-published ebook, no stated license — not ingested into this wiki; see `raw/copyrighted/50_ui_tips.pdf`) applies the proximity principle to form layout (labels closer to their own input than to adjacent ones; headlines closer to their body copy than to the element above), and cites Miller's Law (working memory holds ~7±2 objects) as the rationale for grouping related form fields with clear whitespace between clusters.
-
-## Notes for the wiki
-
-A local snapshot is saved at `raw/safe/wikipedia-gestalt-psychology.html` alongside the live URL. Licensed CC BY-SA 4.0, same treatment as this wiki's other Wikipedia sources — content folded in is paraphrased, not quoted.
-
-**What was left out, and why** (per `schema.md`'s ingestion-report requirement): the article's history of the broader Gestalt school beyond perceptual organization (its influence on social psychology, its institutional history in Germany and the Nazi-era emigration of its founders to the U.S.) was left out as outside `purpose.md`'s UI/UX scope — kept only the perceptual-organization principles and their design applications. The cartography/map example (the Mississippi River map) was summarized only in passing rather than detailed, since [[grid-layout]] and [[clear-first-reads]] already supply this wiki's own Web-design examples for the same principles.
-
-Linked this page from [[grid-layout]] (proximity/similarity, already described without being named) and [[clear-first-reads]] (figure-ground, including clarifying that page's informal pre-existing use of the word "gestalt"). Did not force a connection to `above-the-fold` or `consistent-sidebars-of-related-content` — both are adjacent layout patterns but don't have a specific Gestalt-principle claim strong enough to cite without it feeling tacked on.

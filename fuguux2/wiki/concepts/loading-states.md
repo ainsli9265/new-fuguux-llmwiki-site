@@ -2,7 +2,7 @@
 type: concept
 title: Loading States
 tags: [feedback, ux-patterns, performance, progressive-disclosure]
-related: [interface-design-principles, affordance, action-buttons, visual-hierarchy, form-design]
+related: [interface-design-principles, affordance, action-buttons, visual-hierarchy, form-design, auto-save]
 created: 2026-06-25
 updated: 2026-06-25
 ---

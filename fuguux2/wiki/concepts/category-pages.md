@@ -16,7 +16,7 @@ updated: 2026-06-24
 
 **Solution:** keep category sections distinct in identity but obviously part of one larger site:
 
-- **Use a consistent layout.** The same [[grid-layout|grid]] and page template across every category section means customers recognize the structure even in an area they've never visited, and don't mistake "I'm in a new section" for "I'm on the wrong site."
+- **Use a consistent layout.** The same [[grid-layout|grid]] and [[page-template]] across every category section means customers recognize the structure even in an area they've never visited, and don't mistake "I'm in a new section" for "I'm on the wrong site."
 - **Keep navigation elements unchanged in position**, even if you vary a detail like a tab's color to signal which section is active — radical layout changes between sections break the consistency this pattern exists to protect.
 - **Signal clearly that the customer has "arrived."** A [[clear-first-reads|clear first read]] naming the section accomplishes this the same way a "Welcome to —" sign does when you drive into a new town.
 - **Carry strong information scent into the section**, not just at the entry point to it — see [[browsable-content]] for what that means concretely (text, images, and grouping that confirm a customer is getting closer to, or has reached, what they wanted).

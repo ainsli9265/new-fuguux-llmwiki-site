@@ -41,9 +41,3 @@ Beyond the technical Gibson/Norman distinction, "affordance" has drifted toward 
 ## Further reading
 
 Victor Ponamariov's *50 Tips to Improve User Interface* (self-published ebook, no stated license — not ingested into this wiki; see `raw/copyrighted/50_ui_tips.pdf`) applies perceivable affordance to two UI patterns: showing a partially-visible item at the edge of a scrollable list to signal more content exists, and ensuring links are visually distinct from body text without relying on hover state.
-
-## Notes for the wiki
-
-Extracted from [[wikipedia-2026-affordance]]. The term had been used informally on [[action-buttons]] since that page's creation, without being explained — this page supplies the underlying theory the pattern was already leaning on, and [[action-buttons]] now links here instead of carrying the explanation itself.
-
-Left out (per `schema.md`'s ingestion-report requirement): Jenny L. Davis's mechanisms-and-conditions framework (2016/2020) — a sociology-of-technology reframing ("how does X afford, for whom, under what circumstances") that's a step removed from the design/HCI usage the rest of this wiki documents, and didn't have an existing page or pattern to attach it to; the language-education and other cross-disciplinary extensions (criminology, sports science, AI, fire-safety signage) as named only in passing with no design-specific content.

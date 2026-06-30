@@ -2,7 +2,7 @@
 type: concept
 title: Progressive Disclosure
 tags: [information-architecture, cognitive-load, navigation, ux-principles]
-related: [hicks-law, above-the-fold, loading-states, homepage-portal, form-design, multiple-ways-to-navigate, interface-design-principles, wikipedia-2026-progressive-disclosure]
+related: [hicks-law, above-the-fold, loading-states, homepage-portal, form-design, multiple-ways-to-navigate, interface-design-principles, clean-product-details, process-funnel, quick-flow-checkout, cognitive-load, wikipedia-2026-progressive-disclosure]
 sources: ["https://en.wikipedia.org/wiki/Hick%27s_law", "https://en.wikipedia.org/wiki/Progressive_disclosure"]
 created: 2026-06-26
 ---
@@ -36,3 +36,7 @@ The principle extends beyond digital interfaces. Theme park queue designers use 
 ## Limits
 
 Progressive disclosure shifts cognitive cost rather than eliminating it. Content hidden behind a "show more" link is less findable for users who don't know to look for it. Applied carelessly, it can frustrate expert users who already know what they need and have to take extra steps to reveal it. The tradeoff is between a cleaner default state (benefiting novices and occasional users) and a more efficient expert experience (which may benefit from having more exposed at once). Interfaces that serve a wide ability range often need both paths.
+
+## Further reading
+
+*ReForm: Free Chapters and Tips* (ungated PDF, no stated open license; see `raw/copyrighted/reform-free-chapters-and-tips.pdf`) demonstrates progressive disclosure applied specifically to forms: optional sections are hidden by default and revealed only when the user checks a corresponding checkbox, at which point the revealed section becomes required rather than optional. The worked example is a hotel booking form with optional "Special Requirements" and "I want to be picked up" sections; common real-world applications include delivery address fields, callback phone numbers, and "Show advanced options" groups.

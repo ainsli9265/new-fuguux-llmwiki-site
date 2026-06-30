@@ -23,9 +23,3 @@ Practitioner guidance on running user-research interviews, part of Digital.gov's
 - The **5 Whys** technique: repeatedly asking "why" about a vague or abstract word/phrase the participant used, to draw out the concrete detail behind it.
 - Mirror the participant's own words back to them in question form, rather than leading with your own paraphrase of what you think they mean — this avoids cueing them toward the answer you expect.
 - Internal interviewer bias is treated as unavoidable; the guidance frames the fix as awareness and acknowledgment of it, not elimination.
-
-## Notes for the wiki
-
-A local snapshot is saved at `raw/safe/digitalgov-interviews.html` alongside the live URL. As a work of the U.S. federal government, this page is presumptively public domain under 17 U.S.C. § 105, consistent with the precedent set by [[uswds-2025-design-principles]]; no explicit license statement appears on the page itself.
-
-Folded the two-person team structure, guided-conversation framing, 5 Whys technique, and word-mirroring tactic into [[customer-research-methods]]'s existing "Interviews" paragraph — these are practitioner-level additions on top of *The Design of Sites*' more principle-level interview guidance there.

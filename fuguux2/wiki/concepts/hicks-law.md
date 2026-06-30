@@ -2,7 +2,7 @@
 type: concept
 title: "Hick's Law"
 tags: [hci-law, decision-time, navigation, information-architecture]
-related: [fitts-law, homepage-portal, grid-layout, wikipedia-2026-hicks-law, form-design]
+related: [fitts-law, homepage-portal, grid-layout, cognitive-load, wikipedia-2026-hicks-law, form-design]
 sources: ["https://en.wikipedia.org/wiki/Hick%27s_law"]
 created: 2026-06-24
 updated: 2026-06-25
@@ -33,9 +33,3 @@ The law doesn't hold universally: verbal responses to highly familiar stimuli sh
 ## Further reading
 
 Victor Ponamariov's *50 Tips to Improve User Interface* (self-published ebook, no stated license — not ingested into this wiki; see `raw/copyrighted/50_ui_tips.pdf`) applies this law to option selectors: for five to seven or fewer choices, replace dropdowns with immediately-visible options (radio buttons, card selectors, tag toggles) to reduce decision cost — see [[form-design]] for more.
-
-## Notes for the wiki
-
-Created when the dedicated Wikipedia article gave the law enough independent substance — its own formula, its own design implications, and its own documented limitations distinct from Fitts's Law's — to warrant a page rather than staying folded into [[fitts-law]]'s "Related laws" section as a one-sentence, parenthetical mention.
-
-Reclassified from `entity` to `concept` (2026-06-25) after `schema.md` was updated to classify laws as concepts rather than entities — a law is a relationship/framework, not a named thing.

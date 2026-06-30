@@ -2,7 +2,7 @@
 type: concept
 title: Page Template
 tags: [layout, design-pattern, information-architecture, consistency]
-related: [grid-layout, above-the-fold, clear-first-reads, expanding-and-fixed-screen-width, consistent-sidebars-of-related-content, multiple-ways-to-navigate, category-pages, clean-product-details, responsive-web-design, web-site-development-process, vanduyne-2006-designing-effective-page-layouts, vanduyne-2006-developing-customer-centered-sites]
+related: [grid-layout, above-the-fold, clear-first-reads, expanding-and-fixed-screen-width, consistent-sidebars-of-related-content, multiple-ways-to-navigate, category-pages, clean-product-details, responsive-web-design, web-site-development-process, interface-design-principles, quick-flow-checkout, vanduyne-2006-designing-effective-page-layouts, vanduyne-2006-developing-customer-centered-sites]
 sources: [vanDuyne_05_3PP_097-116.pdf, vanDuyne_I_3PP_631-660.pdf]
 created: 2026-06-26
 ---

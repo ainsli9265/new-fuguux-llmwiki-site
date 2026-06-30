@@ -22,7 +22,3 @@ The book's full glossary (A–X) — several hundred short dictionary-style defi
 - A handful of entries added genuinely new, in-scope nuance not previously captured: **personalization** vs. **customization** as related-but-distinct ideas (system-inferred adaptation vs. customer-chosen configuration), folded into [[homepage-portal]]; and **profile** as a lighter-weight, less-detailed alternative to persona, folded into [[personas-and-scenarios]].
 - The glossary names Yahoo! as the best-known example of a **directory** (a hand-curated, hierarchically-organized link listing, as opposed to an algorithmic search engine) — added to [[yahoo]].
 - SITE BRANDING (E1) and PRIVACY POLICY (E4) are each defined only in one-sentence stub form here, cross-referencing patterns from the not-yet-ingested Pattern Group E — consistent with the gap already flagged in the 2026-06-24 lint pass; still not enough material for a dedicated page.
-
-## Notes for the wiki
-
-No new entities — the only named real-world things here besides Yahoo! are single, incidental technology/tool mentions (Adobe Illustrator, Macromedia Flash, Apache, Netscape, America Online, Skype, the W3C), each clearly an implementation detail rather than a UX concept, so none were promoted. No new concept pages created either: every genuinely new idea here was either (a) a single-sentence stub that doesn't meet the "explanation beyond a sentence" threshold, or (b) folded as a refinement into an existing page rather than split out on its own, per the "prefer updating existing pages" rule.

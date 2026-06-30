@@ -37,9 +37,3 @@ The model's accuracy degrades when distance and width both vary across a wide ra
 ## Further reading
 
 Victor Ponamariov's *50 Tips to Improve User Interface* (self-published ebook, no stated license — not ingested into this wiki; see `raw/copyrighted/50_ui_tips.pdf`) applies this law in two tips: expanding button clickable area invisibly via padding, and replacing gallery slider dot indicators with larger clickable areas or navigation arrows, since dots fail badly as touch targets.
-
-## Notes for the wiki
-
-Created when the dedicated Wikipedia article, plus the earlier one-sentence mentions in [[know-your-customers]] (from Ch. 3) and the book's glossary, gave the law enough substance for its own page — reversing the earlier "stays inline" call from the Ch. 3/glossary ingestion sessions, which is being logged here rather than silently overwritten.
-
-Reclassified from `entity` to `concept` (2026-06-25) after `schema.md` was updated to classify laws as concepts rather than entities — a law is a relationship/framework, not a named thing, and the page itself draws on multiple sources, which fits the concept pattern better than the entity one.

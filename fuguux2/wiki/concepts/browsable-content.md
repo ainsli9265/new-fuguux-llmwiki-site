@@ -2,10 +2,10 @@
 type: concept
 title: Browsable Content
 tags: [navigation, information-architecture, design-pattern]
-related: [multiple-ways-to-navigate, content-organization-schemes, card-sorting, grid-layout, web-design-patterns, vanduyne-2006-creating-navigation-framework, category-pages, homepage-portal]
-sources: [vanDuyne_B_3PP_215-266.pdf]
+related: [multiple-ways-to-navigate, content-organization-schemes, card-sorting, grid-layout, web-design-patterns, vanduyne-2006-creating-navigation-framework, category-pages, homepage-portal, fuguux-2026-information-hierarchy-for-usability]
+sources: [vanDuyne_B_3PP_215-266.pdf, fuguux-2026-information-hierarchy-for-usability.pdf]
 created: 2026-06-24
-updated: 2026-06-24
+updated: 2026-06-30
 ---
 
 # Browsable Content
@@ -18,7 +18,7 @@ updated: 2026-06-24
 
 - **Pick an organizational scheme** that fits the content and the audience — see [[content-organization-schemes]] for the five named schemes (hierarchical, task-based, alphabetical, chronological, popularity-based) and when each one fits.
 - **Structure content with customers in mind, not your own internal vocabulary.** Use [[card-sorting]] to discover how customers naturally group items and what they call the groups, ideally with several people so disagreement can flag ambiguous terms.
-- **Provide strong information scent.** **Information scent** (a term coined by researchers at Xerox PARC) is the perceived proximity to the information a customer wants, built from cues like link/category text, images, headings, grouping, page layout, and what they've already seen. A label like "Movies" has good scent for someone looking for a DVD; a label like "Computers" has poor scent for someone looking for a digital music player, even though that's arguably where it belongs. Redundant cues — listing the same item under more than one category — improve the odds a customer finds it regardless of which label they expect.
+- **Provide strong information scent.** **Information scent** (a term coined by researchers at Xerox PARC) is the perceived proximity to the information a customer wants, built from cues like link/category text, images, headings, grouping, page layout, and what they've already seen. A label like "Movies" has good scent for someone looking for a DVD; a label like "Computers" has poor scent for someone looking for a digital music player, even though that's arguably where it belongs. Redundant cues — listing the same item under more than one category — improve the odds a customer finds it regardless of which label they expect. The same principle extends beyond top-level categories to every navigational label and link text on the page: navigation bar items, dropdown menu entries, and inline link text should each predict their destination accurately. Link text like "click here" or "learn more" carries no scent — users following such links navigate blind, relying entirely on surrounding context to interpret where they'll end up. The corollary: non-link text that resembles a link (underlined copy, blue-colored body text) creates false scent, misleading users who try to click it.
 - **Help customers find their way back.** Tab rows or breadcrumb trails let someone explore without fear of getting lost, and a clickable logo that always returns to the homepage is a near-universal expectation.
 - **Avoid information overload.** A clear [[grid-layout]], a strong visual hierarchy, consistent content/navigation areas, and a readable font let customers scan a page rather than having to read it end to end to find what they need.
 
